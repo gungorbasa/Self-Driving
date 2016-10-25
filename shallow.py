@@ -15,7 +15,7 @@ epoch = 256
 
 # Reads angles and images and returns them
 def readData(image_path, angles_path):
-    imgs = os.listdir(image_path)
+    imgs = sorted(os.listdir(image_path))
     num = len(imgs)
 
     trainY = []
